@@ -1,0 +1,18 @@
+binarysearch(int arr[],int key,int n)
+{
+   int mid;
+   int l=0;
+   int m=n;
+   while(l<=m)
+   {
+   mid =(l+m)/2;
+   if(arr[mid]==key)
+   return mid;
+   else if(arr[mid]>key)
+   m=mid-1;
+   else
+   l=mid+1;
+   
+   }
+   return -1;
+}
